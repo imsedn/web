@@ -32,7 +32,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-image: none;
-    background-color: black;
+    background-color: #0c0c0c;
   }
   
   button {
@@ -288,9 +288,9 @@
 
 @keyframes animate {
   0%{
-      background-position: left 0 top 10px;
+      background-position: left 0 top -15px;
   }
   100%{
-      background-position: left 12000px top -20px;
+      background-position: left 12000px top -15px;
   }
 }
