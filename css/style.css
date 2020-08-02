@@ -217,7 +217,7 @@ a:hover {
   }
 }
 .main {
-  height: 700px;
+  height: calc(100vh - 110px);
 }
 .main-headline {
   margin-top: 280px;
@@ -227,13 +227,12 @@ a:hover {
   font-weight: bold;
   text-align: center;
   font-size: 90px;
-  color: #b45757;
   user-select: none;
-  text-shadow: 3px 3px 1px #f1dcdc;
-  background-image: url("../img/cover.png");
-  background-repeat: repeat-x;
+  text-shadow: 7px 3px 1px #f0e6e6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-image: url("../img/cover.png");
+  background-repeat: repeat-x;
   animation: animate 60s linear infinite;
 }
 
