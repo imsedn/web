@@ -230,7 +230,7 @@ a:hover {
   color: #b45757;
   user-select: none;
   text-shadow: 3px 3px 1px #f1dcdc;
-  background-image: url("/img/cover2.png");
+  background-image: url("../img/cover.png");
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
