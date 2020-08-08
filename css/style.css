@@ -69,6 +69,8 @@ a:hover {
 }
 .header-logo {
   margin-top: -10px;
+  transform: translateX(-1000px);
+  transition: all 0.5s ease;
 }
 .header-logo a img {
   width: 150px;
@@ -139,6 +141,19 @@ a:hover {
 }
 .header ul li {
   margin: 20px;
+  transition: all 0.5s ease;
+}
+.header ul li:nth-child(1) {
+  transform: translateY(-100px);
+}
+.header ul li:nth-child(2) {
+  transform: translateY(-200px);
+}
+.header ul li:nth-child(3) {
+  transform: translateY(-300px);
+}
+.header ul li:nth-child(4) {
+  transform: translateY(-400px);
 }
 .header ul a {
   font-family: "Open Sans";

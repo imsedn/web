@@ -11,12 +11,6 @@ $(document).ready(function () {
 });
 //BURGER MENU
 
-
-$(window).ready(function(){
-    $(".header__link, h1, ul, li").fadeIn('slow');
- });
-
-
 //WATER RIPPLE
     $(document).ready(function() {
         try {
@@ -30,6 +24,20 @@ $(window).ready(function(){
                 dropRadius: 10, //px
                 perturbance: 0.04,
                 interactive: true
+            });
+            $('li').css({
+                '-webkit-transform' : 'translateY(0px)',
+                '-moz-transform'    : 'translateY(0px)',
+                '-o-transform'      : 'translateY(0px)',
+                '-ms-transform'     : 'translateY(px)',
+                'transform'         : 'translateY(0px)'
+            });
+            $('.header-logo').css({
+                '-webkit-transform' : 'translateX(0px)',
+                '-moz-transform'    : 'translateX(0px)',
+                '-o-transform'      : 'translateX(0px)',
+                '-ms-transform'     : 'translateX(px)',
+                'transform'         : 'translateX(0px)'
             });
         }
         catch (e) {
