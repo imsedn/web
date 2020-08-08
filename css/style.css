@@ -131,6 +131,7 @@ a:hover {
   z-index: 900;
 }
 .header ul {
+  user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -271,6 +272,7 @@ a:hover {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   animation: scroll 2s linear infinite;
+  user-select: none;
 }
 
 @media (min-width: 576px) {

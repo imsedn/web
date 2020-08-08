@@ -11,6 +11,12 @@ $(document).ready(function () {
 });
 //BURGER MENU
 
+
+$(window).ready(function(){
+    $(".header__link, h1, ul, li").fadeIn('slow');
+ });
+
+
 //WATER RIPPLE
     $(document).ready(function() {
         try {
