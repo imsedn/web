@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
@@ -224,28 +225,116 @@ a:hover {
   height: calc(100vh - 110px);
 }
 .main-headline {
-  margin-top: 280px;
+  margin-top: 200px;
 }
-.main-headline h1 {
+.main-headline .text {
+  font-weight: 100;
+  color: #FAFAFA;
+}
+.main-headline .dud {
+  color: #757575;
+}
+.main h1 {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 90px;
+  font-size: 35px;
   user-select: none;
-  text-shadow: 7px 3px 1px #f0e6e6;
+  text-shadow: 2px 2px 1px #f0e6e6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: url("../img/cover.png");
   background-repeat: repeat-x;
   animation: animate 60s linear infinite;
 }
+.main h5 {
+  color: #dfb5b5;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  user-select: none;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #e2a8a8;
+  text-transform: capitalize;
+  letter-spacing: 10px;
+  font-weight: 100;
+  margin-bottom: 150px;
+}
+.main p {
+  margin-top: calc(100vh - 650px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fafafa;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  animation: scroll 2s linear infinite;
+}
 
+@media (min-width: 576px) {
+  .main-headline h1 {
+    font-size: 40px;
+    text-shadow: 3px 3px 1px #f0e6e6;
+    background-size: 60%;
+  }
+  .main-headline h5 {
+    font-size: 25px;
+    margin-top: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .main-headline {
+    margin-top: 280px;
+  }
+  .main-headline h1 {
+    font-size: 50px;
+    text-shadow: 3px 3px 1px #f0e6e6;
+    background-size: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .main-headline h1 {
+    font-size: 64px;
+    text-shadow: 7px 3px 1px #f0e6e6;
+    background-size: 60%;
+  }
+  .main-headline h5 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-headline {
+    margin-top: 280px;
+  }
+  .main-headline h1 {
+    font-size: 80px;
+    background-size: auto;
+    letter-spacing: 7px;
+  }
+}
 @keyframes animate {
   0% {
     background-position: left 0 top -15px;
   }
   100% {
     background-position: left 12000px top -15px;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  50% {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    color: #d88c8c;
+  }
+  100% {
+    transform: scale(1);
+    transition: all 0.3s ease;
   }
 }
 
