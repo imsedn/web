@@ -230,6 +230,7 @@ a:hover {
 .main-headline .text {
   font-weight: 100;
   color: #FAFAFA;
+  height: 30px;
 }
 .main-headline .dud {
   color: #757575;
@@ -330,7 +331,6 @@ a:hover {
   50% {
     transform: scale(1.1);
     transition: all 0.3s ease;
-    color: #d88c8c;
   }
   100% {
     transform: scale(1);

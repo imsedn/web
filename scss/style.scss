@@ -276,6 +276,7 @@
     .text{
       font-weight: 100;
       color: #FAFAFA;
+      height: 30px;
     }  
     .dud {
       color: #757575;
@@ -392,7 +393,6 @@
   50%{
       transform: scale(1.1);
       transition: all 0.3s ease;
-      color: #d88c8c;
   }
   100%{
       transform: scale(1);
