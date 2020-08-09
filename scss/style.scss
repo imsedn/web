@@ -22,9 +22,9 @@
     src: url(../fonts/opensansmedium.ttf);
   }
 
-  html {
-    overflow-x: hidden;
-  }
+  // html {
+  //   overflow-x: hidden;
+  // }
   body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
@@ -312,8 +312,6 @@
       background-image: url("../img/cover.png");
       background-repeat: repeat-x;
       animation: animate 60s linear infinite;
-      padding-left: 15px;
-      padding-right: 15px;
     }
     h5 {
       color: #dfb5b5;
