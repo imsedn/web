@@ -240,6 +240,8 @@ a:hover {
 .main {
   height: calc(100vh - 110px);
   position: relative;
+  box-shadow: 0px -7px 15px 0px #000000 inset;
+  box-shadow: 0px 40px 32px -3px rgba(0, 0, 0, 0.75);
 }
 .main-headline {
   margin-top: 200px;
@@ -264,8 +266,6 @@ a:hover {
   background-image: url("../img/cover.png");
   background-repeat: repeat-x;
   animation: animate 60s linear infinite;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .main-headline h5 {
   color: #dfb5b5;
@@ -279,7 +279,7 @@ a:hover {
   text-transform: capitalize;
   letter-spacing: 10px;
   font-weight: 100;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .main-headline p {
   position: relative;
@@ -357,6 +357,12 @@ a:hover {
     transform: scale(1);
     transition: all 0.3s ease;
   }
+}
+.work {
+  background-image: url(../img/water.jpg);
+  height: 1000px;
+  box-shadow: 0px 7px 100px -1px #000000 inset;
+  background-attachment: fixed;
 }
 
 /*# sourceMappingURL=style.css.map */
