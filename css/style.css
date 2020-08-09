@@ -239,6 +239,7 @@ a:hover {
 }
 .main {
   height: calc(100vh - 110px);
+  position: relative;
 }
 .main-headline {
   margin-top: 200px;
@@ -251,7 +252,7 @@ a:hover {
 .main-headline .dud {
   color: #757575;
 }
-.main h1 {
+.main-headline h1 {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   text-align: center;
@@ -263,8 +264,10 @@ a:hover {
   background-image: url("../img/cover.png");
   background-repeat: repeat-x;
   animation: animate 60s linear infinite;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.main h5 {
+.main-headline h5 {
   color: #dfb5b5;
   font-family: "Roboto Mono", monospace;
   font-size: 15px;
@@ -278,9 +281,8 @@ a:hover {
   font-weight: 100;
   margin-bottom: 150px;
 }
-.main p {
-  margin-top: calc(100vh - 650px);
-  text-align: center;
+.main-headline p {
+  position: relative;
   text-transform: uppercase;
   color: #fafafa;
   font-weight: bold;
@@ -288,6 +290,8 @@ a:hover {
   font-size: 15px;
   animation: scroll 2s linear infinite;
   user-select: none;
+  text-align: center;
+  bottom: -150px;
 }
 
 @media (min-width: 576px) {
