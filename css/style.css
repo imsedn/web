@@ -239,6 +239,7 @@ a:hover {
 }
 .main {
   height: calc(100vh - 110px);
+  min-height: 600px;
   position: relative;
   box-shadow: 0px -7px 15px 0px #000000 inset;
   box-shadow: 0px 40px 32px -3px rgba(0, 0, 0, 0.75);
@@ -291,7 +292,7 @@ a:hover {
   animation: scroll 2s linear infinite;
   user-select: none;
   text-align: center;
-  bottom: -75px;
+  bottom: 0px;
 }
 
 @media (min-width: 576px) {
@@ -359,11 +360,13 @@ a:hover {
   }
 }
 .work {
-  background-image: url(../img/water.jpg);
+  background-image: url(../img/water0.jpg);
   height: 1000px;
   -webkit-box-shadow: 0px 7px 100px -1px #000000 inset;
   box-shadow: 0px 7px 100px -1px #000000 inset;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
