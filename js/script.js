@@ -166,3 +166,25 @@ $(document).ready(function () {
       next();
 
       ///MATRIX TEXT
+
+
+      $( work ).on( "load", function() {
+        $('work-content-prev-desktop-mobile').css({
+          '-webkit-transform' : 'translateX(0px)',
+          '-moz-transform'    : 'translateX(0px)',
+          '-o-transform'      : 'translateX(0px)',
+          '-ms-transform'     : 'translateX(px)',
+          'transform'         : 'translateX(0px)'
+      });
+    });
+
+
+    $($.work).ready(function() {
+      $('work-content-prev-desktop-mobile').css({
+        '-webkit-transform' : 'translateX(0px)',
+        '-moz-transform'    : 'translateX(0px)',
+        '-o-transform'      : 'translateX(0px)',
+        '-ms-transform'     : 'translateX(px)',
+        'transform'         : 'translateX(0px)'
+    });
+  });
