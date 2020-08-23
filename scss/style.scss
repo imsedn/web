@@ -444,14 +444,14 @@
 
 // <!-- work-->
 .work {
-  background-image: url(../img/water0.jpg);
+  background-image: url(../img/q/qqqqq.png);
   -webkit-box-shadow: 0px 7px 100px -1px #000000 inset;
           box-shadow: 0px 7px 100px -1px #000000 inset;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
     &-content {
-      margin-top: 220px;
+      margin-top: 180px;
       color: #fafafa;
       &-text {
         h2 {
@@ -494,7 +494,7 @@
           position: relative;
           display: block;
           width: 100%;
-          margin-top: 50px;
+          margin-top: 30px;
             img:first-child {
               border: 5px solid #4e4b4b;
               width: 100%;
@@ -508,7 +508,8 @@
         }
       }
       &-btn {
-        margin-bottom: 80px;
+        margin-bottom: 75px;
+        margin-top: 10px;
         button {
           background-color: transparent;
           color: #fafafa;
@@ -564,6 +565,7 @@
 @media (min-width: 992px) {
   .work {
       &-content {
+        margin-top: 250px;
         &-text {
           h2 {
             font-size: 50px;
@@ -589,21 +591,25 @@
           &-desktop {
             width: 100%;
             margin-top: 0px;
+            position: relative;
+            left: 90px;
               img:first-child {
                 border: 5px solid #4e4b4b;
-                width: 100%;
+                width: 80%;
                 height: 100%;
                 max-width: 1200px;
               }
               &-mobile {
-                top: 110px;
+                right: 100px;
+                top: 35px;
               }
           }
         }
         &-btn {
           button {
             font-size: 15px;
-            margin-top: 30px;
+            margin-top: 10px;
+            margin-bottom: 150px;
             letter-spacing: 1px;
             text-shadow: -1px -1px 2px #463f3f;
             transition: all 0.3s ease;
@@ -648,22 +654,26 @@
         &-prev {
           &-desktop {
             width: 100%;
-            margin-top: 0px;
+            margin-top: 30px;
+            position: relative;
+            left: 90px;
               img:first-child {
                 border: 5px solid #4e4b4b;
-                width: 100%;
+                width: 80%;
                 height: 100%;
                 max-width: 1200px;
               }
               &-mobile {
-                top: 130px;
+                right: 120px;
+                top: 40px;
               }
           }
         }
         &-btn {
           button {
-            font-size: 20px;
-            margin-top: 30px;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 150px;
             letter-spacing: 1px;
             text-shadow: -1px -1px 2px #463f3f;
             transition: all 0.3s ease;
@@ -683,6 +693,7 @@
   .work {
       &-content {
         &-text {
+          margin-left: 30px;
           margin-top: 50px;
           h2 {
             font-size: 72px;
@@ -692,7 +703,7 @@
             }
           }
           h5 {
-            font-size: 32px;
+            font-size: 29px;
             margin-top: 48px;
             letter-spacing: 2px;
             text-shadow: -2px -2px 2px #463f3f;
@@ -706,31 +717,34 @@
         &-prev {
           &-desktop {
             width: 100%;
-            margin-top: 0px;
+            margin-top: 50px;
               img:first-child {
                 border: 5px solid #4e4b4b;
-                width: 100%;
+                width: 80%;
                 height: 100%;
                 max-width: 1200px;
               }
               &-mobile {
-                right: 15px;
-                top: 150px;
+                right: 130px;
+                top: 50px;
               }
           }
         }
         &-btn {
+          position: relative;
+          margin-left: 30px;
+          top: -10px;
           button {
-            font-size: 25px;
-            margin-top: 35px;
-            letter-spacing: 2px;
+            // font-size: 25px;
+            // margin-top: 35px;
+            // letter-spacing: 2px;
             text-shadow: -1px -1px 2px #463f3f;
             transition: all 0.3s ease;
             i {
               color: #be4f4f;
               font-size: 22px;
               margin: 3px;
-              vertical-align: -3px;
+              // vertical-align: -1px;
               text-shadow: -1px -1px 2px #463f3f;
             }
           }
@@ -746,15 +760,23 @@
     }
     &-btn {
       margin-left: 50px;
+      top: -40px;
     }
     &-prev-desktop-mobile {
-      top: 160px;
+        right: 140px;
+        top: 60px;
     }
   }
 }
 
 @media (min-width: 1800px) {
-  .work-content-prev-desktop-mobile {
-    right: 50px;
+  .work-content {
+    &-prev-desktop-mobile {
+      right: 160px;
+      top: 70px;
+    }
+    &-btn {
+      top: -60px;
+    }
   }
 }
