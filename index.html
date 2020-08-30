@@ -1,132 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Разработка сайтов и интернет-магазинов</title>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="css/all.css" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    
-<!-- header -->
-<header class="header">
-    <div class="container-fluid">
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex justify-content-between">
-                <div class="header-logo">
-                    <a href="#"><img src="img/logo.svg" alt=""></a>
-                </div>
-                <div class="header-nav">
-                    <button id="mob" class="header-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <div class="header__link">
-                        <ul>
-                            <li><a href="#">Портфолио</a></li>
-                            <li><a href="#">Цены</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li class="header__link-social">
-                                <!-- <a class="m-1" href=""><i class="fab fa-telegram-plane"></i></a>
+          <div class="col-12 d-flex justify-content-between">
+            <div class="header-logo">
+              <a href="#"><img src="img/logo.svg" alt="" /></a>
+            </div>
+            <div class="header-nav">
+              <button id="mob" class="header-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="header__link">
+                <ul>
+                  <li><a href="#">Портфолио</a></li>
+                  <li><a href="#">Цены</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li class="header__link-social">
+                    <!-- <a class="m-1" href=""><i class="fab fa-telegram-plane"></i></a>
                                 <a class="m-1" href=""><i class="fab fa-whatsapp"></i></a>
                                 <a class="m-1" href=""><i class="fab fa-instagram"></i></a>
                                 <a class="m-1" href=""><i class="fab fa-viber"></i></a> -->
-                                
-                            </li>
-                        </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-desktoplink">
+              <ul>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <section class="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="main-headline">
+              <h1>Разработка сайтов под ключ</h1>
+              <h5 class="text">Веб студия Doblo</h5>
+              <p>scroll down</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- main end-->
+
+    <!-- work-->
+    <section class="work">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="work-content">
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Pashmina Emporium</h2>
+                        <h5>Интернет магазин</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
                     </div>
-                </div>
-                <div class="header-desktoplink">
-                    <ul>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">Цены</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- header end -->
 
-<!-- main -->
-<section class="main">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="main-headline">
-                    <h1>Разработка сайтов под ключ</h1>
-                    <h5 class="text">Веб студия Doblo</h5>
-                    <p>scroll down</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- main end-->
-
-<!-- work-->
-<section class="work">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-
-                <div class="work-content owl-carousel" id="slider_container">
-                    <div>
-
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div class="work-content-text">
-                                    <h2>Мой порт</h2>
-                                    <h5>Корпоративный сайт</h5>
-                                    <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
-                                </div>
-                            </div>
-                        
-                            <div class="col-12 col-lg-8">
-                                <div class="work-content-prev">
-                                    <div class="work-content-prev-desktop">
-                                        <a href="https://moyport.info/" target="_blank">
-                                            <img src="img/portfolio/pashmina.jpg" alt="artek">
-                                            <img class="work-content-prev-desktop-mobile" src="img/portfolio/pashminamob.png" alt="iphone">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="work-content-btn">
-                                    <button> <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект</button>
-                                    <button>Следующий проект <i class="fas fa-long-arrow-alt-right"></i> </button>
-                                </div>
-                            </div>
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="https://pashm.ru/" target="_blank"><img src="img/portfolio/pashmina.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/pashmina2.png" alt="iphone"/></a>
                         </div>
-
+                      </div>
                     </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
+              </div>
 
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Korea Box</h2>
+                        <h5>Интернет магазин</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="https://korea-box.ru" target="_blank"><img src="img/portfolio/koreabox.JPG" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/koreaboxmob.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Мой порт</h2>
+                        <h5>Корпоративный сайт</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="https://moyport.info/" target="_blank"><img src="img/portfolio/moiport.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/moiportmob2.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Giropilot</h2>
+                        <h5>Интернет магазин</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="https://giropilot.ru/" target="_blank"><img src="img/portfolio/giropilot.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/giropilotmob.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_slide">
+                <div class="item">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <div class="work-content-text">
+                        <h2>Binny</h2>
+                        <h5>Корпоративный сайт</h5>
+                        <p>WordPress, Responsive, Custom Animations, Multiple Languages, Illustrations</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                      <div class="work-content-prev">
+                        <div class="work-content-prev-desktop">
+                          <a href="http://binny.ru/" target="_blank"><img src="img/portfolio/binny.jpg" alt="artek"/><img class="work-content-prev-desktop-mobile" src="img/portfolio/binnymob.png" alt="iphone"/></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="work-content-btn">
+                        <button class="work_slide_prev">
+                          <i class="fas fa-long-arrow-alt-left"></i> Предыдущий проект 
+                        </button>
+                        <button class="work_slide_next">
+                          Следующий проект <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              
             </div>
+          </div>
         </div>
-    </div>
-</section>
-  
+      </div>
+    </section>
+    <!-- work end -->
 
-
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/jquery.ripples.js"></script>
-
-
-
-
-</body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

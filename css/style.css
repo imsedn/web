@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:100";
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
@@ -249,7 +249,7 @@ a:hover {
 }
 .main-headline .text {
   font-weight: 100;
-  color: #FAFAFA;
+  color: #fafafa;
   height: 30px;
 }
 .main-headline .dud {
@@ -368,8 +368,12 @@ a:hover {
   background-size: cover;
 }
 .work-content {
-  margin-top: 180px;
+  margin-top: 130px;
   color: #fafafa;
+}
+
+.work-content .item {
+  margin-top: 50px;
 }
 .work-content-text h2 {
   font-family: "Ubuntu", sans-serif;
@@ -387,6 +391,7 @@ a:hover {
   border-bottom: 2px solid #e04b4b;
   bottom: 140%;
   left: 0;
+  z-index: 99;
 }
 .work-content-text h5 {
   font-family: "Open Sans", sans-serif;
