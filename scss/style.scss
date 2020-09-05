@@ -444,6 +444,18 @@
 
 // <!-- work-->
 .work {
+  &-headline {
+    text-align: center;
+    margin-top: 150px;
+    color: #e04b4b;
+    font-size: 42px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: -1px -1px 2px #463f3f;
+    font-family: 'Roboto Mono', monospace;
+    display: none;
+  }
   background-image: url(../img/workbg.jpg);
   -webkit-box-shadow: 0px 7px 100px -1px #000000 inset;
           box-shadow: 0px 7px 100px -1px #000000 inset;
@@ -467,7 +479,7 @@
             content: '';                    
             position: absolute;             
             border-bottom: 2px solid #e04b4b;
-            bottom: 140%;                         
+            bottom: 120%;                         
             left: 0; 
           }
         }
@@ -564,8 +576,11 @@
 
 @media (min-width: 992px) {
   .work {
+    &-headline {
+      display: block;
+    }
       &-content {
-        margin-top: 250px;
+        margin-top: 150px;
         &-text {
           h2 {
             font-size: 50px;
@@ -609,7 +624,7 @@
           button {
             font-size: 15px;
             margin-top: 10px;
-            margin-bottom: 150px;
+            margin-bottom: 80px;
             letter-spacing: 1px;
             text-shadow: -1px -1px 2px #463f3f;
             transition: all 0.3s ease;
@@ -630,8 +645,9 @@
 @media (min-width: 1200px) {
   .work {
       &-content {
+        margin-top: 100px;
         &-text {
-          margin-top: 50px;
+          margin-top: 0px;
           h2 {
             font-size: 60px;
             letter-spacing: 5px;
@@ -673,7 +689,6 @@
           button {
             font-size: 15px;
             margin-top: 10px;
-            margin-bottom: 150px;
             letter-spacing: 1px;
             text-shadow: -1px -1px 2px #463f3f;
             transition: all 0.3s ease;
@@ -760,7 +775,7 @@
     }
     &-btn {
       margin-left: 50px;
-      top: -40px;
+      top: 0;
     }
     &-prev-desktop-mobile {
         right: 140px;

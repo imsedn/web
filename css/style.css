@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
-@import "https://fonts.googleapis.com/css?family=Roboto+Mono:100";
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
@@ -249,7 +249,7 @@ a:hover {
 }
 .main-headline .text {
   font-weight: 100;
-  color: #fafafa;
+  color: #FAFAFA;
   height: 30px;
 }
 .main-headline .dud {
@@ -367,13 +367,21 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.work-content {
-  margin-top: 130px;
-  color: #fafafa;
+.work-headline {
+  text-align: center;
+  margin-top: 150px;
+  color: #e04b4b;
+  font-size: 42px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: -1px -1px 2px #463f3f;
+  font-family: "Roboto Mono", monospace;
+  display: none;
 }
-
-.work-content .item {
-  margin-top: 50px;
+.work-content {
+  margin-top: 180px;
+  color: #fafafa;
 }
 .work-content-text h2 {
   font-family: "Ubuntu", sans-serif;
@@ -389,9 +397,8 @@ a:hover {
   content: "";
   position: absolute;
   border-bottom: 2px solid #e04b4b;
-  bottom: 140%;
+  bottom: 120%;
   left: 0;
-  z-index: 99;
 }
 .work-content-text h5 {
   font-family: "Open Sans", sans-serif;
@@ -475,8 +482,11 @@ a:hover {
   }
 }
 @media (min-width: 992px) {
+  .work-headline {
+    display: block;
+  }
   .work-content {
-    margin-top: 250px;
+    margin-top: 150px;
   }
   .work-content-text h2 {
     font-size: 50px;
@@ -515,7 +525,7 @@ a:hover {
   .work-content-btn button {
     font-size: 15px;
     margin-top: 10px;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
     letter-spacing: 1px;
     text-shadow: -1px -1px 2px #463f3f;
     transition: all 0.3s ease;
@@ -529,8 +539,11 @@ a:hover {
   }
 }
 @media (min-width: 1200px) {
+  .work-content {
+    margin-top: 100px;
+  }
   .work-content-text {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .work-content-text h2 {
     font-size: 60px;
@@ -568,7 +581,6 @@ a:hover {
   .work-content-btn button {
     font-size: 15px;
     margin-top: 10px;
-    margin-bottom: 150px;
     letter-spacing: 1px;
     text-shadow: -1px -1px 2px #463f3f;
     transition: all 0.3s ease;
@@ -639,7 +651,7 @@ a:hover {
   }
   .work-content-btn {
     margin-left: 50px;
-    top: -40px;
+    top: 0;
   }
   .work-content-prev-desktop-mobile {
     right: 140px;

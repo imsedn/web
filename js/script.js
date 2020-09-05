@@ -10,7 +10,7 @@ $(document).ready(function () {
     prevArrow: $(".work_slide_prev"),
     nextArrow: $(".work_slide_next"),
     fade: true,
-    speed: 1500,
+    speed: 800,
     infinite: true,
   });
 
