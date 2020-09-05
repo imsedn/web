@@ -456,7 +456,7 @@
     font-family: 'Roboto Mono', monospace;
     display: none;
   }
-  background-image: url(../img/workbg.jpg);
+  background-image: url(../img/24637.jpg);
   -webkit-box-shadow: 0px 7px 100px -1px #000000 inset;
           box-shadow: 0px 7px 100px -1px #000000 inset;
   background-attachment: fixed;
@@ -795,4 +795,21 @@
     }
   }
 }
+// <!-- work end -->
 
+
+// <!-- service -->
+
+.service {
+  .slide__number {
+    color: #e04b4b;
+    font-family: 'Roboto Mono', monospace;
+  }
+  .slide__title {
+    font-family: 'Ubuntu', monospace;
+  }
+  .slide__subtitle {
+    // font-family: 'Ubuntu', monospace;
+    font-family: 'Roboto Mono', monospace;
+  }
+}

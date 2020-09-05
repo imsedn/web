@@ -18,7 +18,7 @@ $(document).ready(function () {
 
   //WATER RIPPLE
   try {
-    $("body").ripples({
+    $(".ripple-wrap").ripples({
       resolution: 512,
       dropRadius: 20, //px
       perturbance: 0.04,
@@ -49,28 +49,28 @@ $(document).ready(function () {
   }
 
   $(".js-ripples-disable").on("click", function () {
-    $("body, main").ripples("destroy");
+    $(".ripple-wrap, .main").ripples("destroy");
     $(this).hide();
   });
 
   $(".js-ripples-play").on("click", function () {
-    $("body, main").ripples("play");
+    $(".ripple-wrap, .main").ripples("play");
   });
 
   $(".js-ripples-pause").on("click", function () {
-    $("body, main").ripples("pause");
+    $(".ripple-wrap, .main").ripples("pause");
   });
 
   // Automatic drops
   setInterval(function () {
-    var $el = $("main");
+    var $el = $(".ripple-wrap");
     var x = Math.random() * $el.outerWidth();
     var y = Math.random() * $el.outerHeight();
     var dropRadius = 20;
     var strength = 0.04 + Math.random() * 0.04;
 
     $el.ripples("drop", x, y, dropRadius, strength);
-  }, 400);
+  }, 2200);
   //WATER RIPPLE
 
   ///MATRIX TEXT
