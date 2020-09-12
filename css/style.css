@@ -687,7 +687,6 @@ a:hover {
 }
 .service .content__subtitle {
   font-family: "Roboto Mono", monospace;
-  color: #e04b4b;
   user-select: none;
 }
 .service .content__number {
