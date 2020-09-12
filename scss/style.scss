@@ -446,15 +446,16 @@
 .work {
   &-headline {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 0;
     color: #e04b4b;
     font-size: 42px;
     letter-spacing: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    text-shadow: -1px -1px 2px #463f3f;
+    text-shadow: -4px -4px 2px #161616;
     font-family: 'Roboto Mono', monospace;
     display: none;
+    user-select: none;
   }
   background-image: url(../img/24637.jpg);
   -webkit-box-shadow: 0px 7px 100px -1px #000000 inset;
@@ -463,7 +464,7 @@
   background-repeat: no-repeat;
   background-size: cover;
     &-content {
-      margin-top: 180px;
+      margin-top: 125px;
       color: #fafafa;
       &-text {
         h2 {
@@ -520,7 +521,7 @@
         }
       }
       &-btn {
-        margin-bottom: 75px;
+        margin-bottom: 125px;
         margin-top: 10px;
         button {
           background-color: transparent;
@@ -578,10 +579,12 @@
   .work {
     &-headline {
       display: block;
+      margin-top: 150px;
     }
       &-content {
         margin-top: 150px;
         &-text {
+          margin-left: 30px;
           h2 {
             font-size: 50px;
             letter-spacing: 4px;
@@ -708,7 +711,7 @@
   .work {
       &-content {
         &-text {
-          margin-left: 30px;
+          margin-left: 50px;
           margin-top: 50px;
           h2 {
             font-size: 72px;
@@ -804,12 +807,32 @@
   .slide__number {
     color: #e04b4b;
     font-family: 'Roboto Mono', monospace;
+    user-select: none;
   }
   .slide__title {
     font-family: 'Ubuntu', monospace;
+    user-select: none;
   }
   .slide__subtitle {
     // font-family: 'Ubuntu', monospace;
     font-family: 'Roboto Mono', monospace;
+    user-select: none;
   }
+  .content__subtitle {
+    // font-family: 'Ubuntu', monospace;
+    font-family: 'Roboto Mono', monospace;
+    color: #e04b4b;
+    user-select: none;
+  }
+  .content__number {
+    color: #e04b4b;
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+	}
+  .content__title {
+    user-select: none;
+	}
+  .content__text {
+    user-select: none;
+	}
 }

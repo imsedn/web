@@ -369,18 +369,19 @@ a:hover {
 }
 .work-headline {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 0;
   color: #e04b4b;
   font-size: 42px;
   letter-spacing: 15px;
   text-transform: uppercase;
   font-weight: 700;
-  text-shadow: -1px -1px 2px #463f3f;
+  text-shadow: -4px -4px 2px #161616;
   font-family: "Roboto Mono", monospace;
   display: none;
+  user-select: none;
 }
 .work-content {
-  margin-top: 180px;
+  margin-top: 125px;
   color: #fafafa;
 }
 .work-content-text h2 {
@@ -434,7 +435,7 @@ a:hover {
   display: none;
 }
 .work-content-btn {
-  margin-bottom: 75px;
+  margin-bottom: 125px;
   margin-top: 10px;
 }
 .work-content-btn button {
@@ -484,9 +485,13 @@ a:hover {
 @media (min-width: 992px) {
   .work-headline {
     display: block;
+    margin-top: 150px;
   }
   .work-content {
     margin-top: 150px;
+  }
+  .work-content-text {
+    margin-left: 30px;
   }
   .work-content-text h2 {
     font-size: 50px;
@@ -595,7 +600,7 @@ a:hover {
 }
 @media (min-width: 1400px) {
   .work-content-text {
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 50px;
   }
   .work-content-text h2 {
@@ -670,12 +675,31 @@ a:hover {
 .service .slide__number {
   color: #e04b4b;
   font-family: "Roboto Mono", monospace;
+  user-select: none;
 }
 .service .slide__title {
   font-family: "Ubuntu", monospace;
+  user-select: none;
 }
 .service .slide__subtitle {
   font-family: "Roboto Mono", monospace;
+  user-select: none;
+}
+.service .content__subtitle {
+  font-family: "Roboto Mono", monospace;
+  color: #e04b4b;
+  user-select: none;
+}
+.service .content__number {
+  color: #e04b4b;
+  font-family: "Roboto Mono", monospace;
+  user-select: none;
+}
+.service .content__title {
+  user-select: none;
+}
+.service .content__text {
+  user-select: none;
 }
 
 /*# sourceMappingURL=style.css.map */
