@@ -460,7 +460,7 @@ a:focus {
 		font-size: 2rem;
 	}
 	.content__title {
-		font-size: 7vw;
+		font-size: 5vw;
 	}
 	.content__subtitle {
 		font-size: 1.15rem;
@@ -490,8 +490,9 @@ a:focus {
 	}
 	.slide__title {
 		display: block;
-		transform: rotate(-90deg) translate(-350px);
+		transform: rotate(-90deg) translate(-390px, -95px);
 		user-select: none;
+		width: 310px;
 	}
 	.content__subtitle {
 		margin-top: 30px;
@@ -515,5 +516,8 @@ a:focus {
 		font-family: 'Roboto Mono', monospace;
 		font-size: 18px;
 		user-select: none;
+	}
+	.slide__img-wrap {
+		opacity: 0;
 	}
 }
