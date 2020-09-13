@@ -53,7 +53,7 @@ body {
 @keyframes loaderAnim {
 	to {
 		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
+		-webkit-transform: scale3d(0.5,0.5,1);transform: scale3d(0.5,0.5,1);
 	}
 }
 
@@ -212,8 +212,14 @@ a:focus {
 	padding: 0;
 	margin: 0;
 	pointer-events: none;
+	-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+	transition: opacity 0.8s, -webkit-transform 0.8s;
+	-o-transition: transform 0.8s, opacity 0.8s;
 	transition: transform 0.8s, opacity 0.8s;
-	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition: transform 0.8s, opacity 0.8s, -webkit-transform 0.8s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	-o-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
 .nav--next {
@@ -222,7 +228,7 @@ a:focus {
 }
 
 .icon--navarrow-next {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);
 }
 
 .nav--prev {
@@ -231,20 +237,26 @@ a:focus {
 }
 
 .icon--navarrow-prev {
-	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	    -ms-transform: rotate(-135deg);
+	        transform: rotate(-135deg);
 }
 
 .slideshow--previewopen .nav {
 	opacity: 0;
-	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	     -o-transition-duration: 0.4s;
+	        transition-duration: 0.4s;
 }
 
 .slideshow--previewopen .nav--next {
-	transform: translate3d(100%, 100%, 0);
+	-webkit-transform: translate3d(100%, 100%, 0);
+	        transform: translate3d(100%, 100%, 0);
 }
 
 .slideshow--previewopen .nav--prev {
-	transform: translate3d(-100%, -100%, 0);
+	-webkit-transform: translate3d(-100%, -100%, 0);
+	        transform: translate3d(-100%, -100%, 0);
 }
 
 .slide__img {
@@ -436,7 +448,7 @@ a:focus {
 		position: relative;
 		-webkit-writing-mode: vertical-rl;
 		writing-mode: vertical-rl;
-		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);
 		z-index: 1000;
 	}
 	.content {
@@ -490,7 +502,8 @@ a:focus {
 	}
 	.slide__title {
 		display: block;
-		transform: rotate(-90deg) translate(-390px, -95px);
+		
+-webkit-transform: rotate(-90deg) translate(-390px, -95px);-ms-transform: rotate(-90deg) translate(-390px, -95px);transform: rotate(-90deg) translate(-390px, -95px);
 		user-select: none;
 		width: 310px;
 	}

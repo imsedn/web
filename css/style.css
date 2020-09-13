@@ -450,10 +450,24 @@ a:hover {
   text-shadow: -1px -1px 2px #463f3f;
   transition: all 0.3s ease;
 }
+.work-content-btn button:before {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  width: 0;
+  height: 1px;
+  background: #d64444;
+  border-radius: 5px;
+  transition: all 2s ease-in-out;
+}
 .work-content-btn button:hover {
   color: #e04b4b;
   transition: all 0.3s ease;
   text-shadow: -2px -2px 2px #463f3f;
+}
+.work-content-btn button:hover:before {
+  width: 80%;
 }
 .work-content-btn button i {
   color: #e03737;
