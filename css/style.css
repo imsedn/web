@@ -366,6 +366,7 @@ a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .work-headline {
   text-align: center;
