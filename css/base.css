@@ -313,7 +313,7 @@ a:focus {
 }
 
 .content {
-	position: fixed;
+	position: absolute;
 	top: 10rem;
 	left: 0;
 	width: 100%;
@@ -422,6 +422,7 @@ a:focus {
 		padding: 10vh 0 7vh;
 		flex-direction: column;
 		justify-content: space-between;
+		position: relative;
 	}
 	.slide__side {
 		margin: 0 0 0 -1.85rem;
@@ -502,6 +503,8 @@ a:focus {
 	}
 	.slide__title {
 		display: block;
+		position: relative;
+		bottom: 100px;
 		
 -webkit-transform: rotate(-90deg) translate(-390px, -95px);-ms-transform: rotate(-90deg) translate(-390px, -95px);transform: rotate(-90deg) translate(-390px, -95px);
 		user-select: none;
@@ -532,5 +535,8 @@ a:focus {
 	}
 	.slide__img-wrap {
 		opacity: 0;
+	}
+	.slide {
+		position: relative;
 	}
 }
