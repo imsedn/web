@@ -165,6 +165,64 @@ $(document).ready(function () {
   };
 
   next();
-
   ///MATRIX TEXT
+
+
+
+//   ///COUNTER
+//   jQuery(function ($) {
+//     // start all the timers
+//     $('.timer').each(count);
+
+//     function count(options) {
+//       var $this = $(this);
+//       options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+//       $this.countTo(options);
+//     }
+//   });
+//  ///COUNTER
+
+
+
+
+//COUNTER 2
+ var block_show = null;
+ 
+function scrollTracking(){
+	var wt = $(window).scrollTop();
+	var wh = $(window).height();
+	var et = $('.active').offset().top;
+	var eh = $('.active').outerHeight();
+ 
+	if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)){
+		if (block_show == null || block_show == false) {
+			jQuery(function ($) {
+            // start all the timers
+            $('.timer').each(count);
+        
+            function count(options) {
+              var $this = $(this);
+              options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+              $this.countTo(options);
+            }
+          });
+		}
+		block_show = true;
+	} else {
+		if (block_show == null || block_show == true) {
+			
+		}
+		block_show = false;
+	}
+}
+ 
+$(window).scroll(function(){
+	scrollTracking();
+});
+	
+$(document).ready(function(){ 
+	scrollTracking();
+});
+//COUNTER 2
+
 });

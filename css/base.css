@@ -522,6 +522,7 @@ a:focus {
 		font-size: 22px;
 		text-shadow: -1px -1px 2px #463f3f;
 		user-select: none;
+		background-color: #000000;
 	}
 	.content__title {
 		font-family: 'Ubuntu', monospace;

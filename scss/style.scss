@@ -852,5 +852,68 @@
 	}
   .content__text {
     user-select: none;
-	}
+  }
+  .slide__side {
+    user-select: none;
+  }
+}
+
+// <!-- service -->
+
+// about
+.about {
+  &-counter {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h5 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 45px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+    P {
+      font-family: 'Ubuntu', monospace;
+      color: #818181;
+      text-align: center;
+      font-size: 18px;
+      user-select: none;
+    }
+  }
+  &-us {
+    h5 {
+      margin-top: 50px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: 'Ubuntu', monospace;
+      color: #818181;
+      // text-align: center;
+      font-size: 18px;
+      user-select: none;
+    }
+    ul {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      user-select: none;
+      li {
+        list-style: disc;
+        margin: 10px;
+        margin-left: 30px;
+        color: #fafafa;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
+        user-select: none;
+      }
+    }
+
+    
+  }
 }
