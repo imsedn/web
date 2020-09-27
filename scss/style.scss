@@ -908,6 +908,7 @@
       margin-bottom: 30px;
       user-select: none;
       li {
+        padding-left: 10px;
         list-style: disc;
         margin: 10px;
         margin-left: 30px;
@@ -919,5 +920,405 @@
     }
 
     
+  }
+}
+
+
+@media (min-width: 576px) {
+  .about {
+    &-counter {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      &-first {
+        border-right: 1px solid #28282a;
+        border-bottom: 1px solid #28282a;
+        width: 250px;
+        padding: 20px;
+      }
+      &-second{
+        border-bottom: 1px solid #28282a;
+        width: 250px;
+        padding: 20px;
+      }
+      &-third {
+        border-right: 1px solid #28282a;
+        width: 250px;
+        padding: 20px;
+      }
+      &-fourth {
+        width: 250px;
+        padding: 20px;
+        
+      }
+      h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      P {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        text-align: center;
+        font-size: 18px;
+        user-select: none;
+        
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    &-counter {
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      &-first {
+        border-right: 2px solid #28282a;
+        border-bottom: 2px solid #28282a;
+        width: 350px;
+        padding: 20px;
+      }
+      &-second{
+        border-bottom: 2px solid #28282a;
+        width: 350px;
+        padding: 20px;
+      }
+      &-third {
+        border-right: 2px solid #28282a;
+        width: 350px;
+        padding: 20px;
+      }
+      &-fourth {
+        width: 350px;
+        padding: 20px;
+        
+      }
+      h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 68px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      P {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        text-align: center;
+        font-size: 24px;
+        user-select: none;
+        
+      }
+    }
+    &-us {
+      h5 {
+        margin-top: 100px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        font-size: 19px;
+        user-select: none;
+        span {
+          margin-top: 15px;
+          display: block;
+        }
+        
+      }
+      ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        user-select: none;
+        li {
+          padding-left: 15px;
+          list-style: disc;
+          margin: 15px;
+          margin-left: 50px;
+          color: #fafafa;
+          font-family: 'Roboto Mono', monospace;
+          font-size: 22px;
+          user-select: none;
+        }
+      }
+  
+      
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about {
+    &-counter {
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      &-first {
+        border-right: 2px solid #28282a;
+        border-bottom: 2px solid #28282a;
+        width: 450px;
+        padding: 20px;
+      }
+      &-second{
+        border-bottom: 2px solid #28282a;
+        width: 450px;
+        padding: 20px;
+      }
+      &-third {
+        border-right: 2px solid #28282a;
+        width: 450px;
+        padding: 20px;
+      }
+      &-fourth {
+        width: 450px;
+        padding: 20px;
+        
+      }
+      h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 75px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      P {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        text-align: center;
+        font-size: 28px;
+        user-select: none;
+        
+      }
+    }
+    &-us {
+      padding: 15px;
+      h5 {
+        margin-top: 100px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        font-size: 19px;
+        user-select: none;
+        span {
+          margin-top: 15px;
+          display: block;
+        }
+        
+      }
+      ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        user-select: none;
+        li {
+          padding-left: 15px;
+          list-style: disc;
+          margin: 15px;
+          margin-left: 50px;
+          color: #fafafa;
+          font-family: 'Roboto Mono', monospace;
+          font-size: 22px;
+          user-select: none;
+        }
+      }
+  
+      
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    &-counter {
+      margin-top: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      &-first {
+        border-right: 2px solid #28282a;
+        border-bottom: 2px solid #28282a;
+        width: 450px;
+        padding: 20px;
+      }
+      &-second{
+        border-bottom: 2px solid #28282a;
+        border-left: 2px solid #28282a;
+        width: 450px;
+        padding: 20px;
+      }
+      &-third {
+        border-right: 2px solid #28282a;
+        border-bottom: 2px solid #28282a;
+        width: 450px;
+        padding: 20px;
+      }
+      &-fourth {
+        width: 450px;
+        padding: 20px;
+        border-left: 2px solid #28282a;
+        
+      }
+      h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 75px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      P {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        text-align: center;
+        font-size: 28px;
+        user-select: none;
+        
+      }
+    }
+    &-us {
+      padding: 15px;
+      h5 {
+        margin-top: 100px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        font-size: 19px;
+        user-select: none;
+        span {
+          margin-top: 15px;
+          display: block;
+        }
+        
+      }
+      ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        user-select: none;
+        li {
+          padding-left: 15px;
+          list-style: disc;
+          margin: 15px;
+          margin-left: 50px;
+          color: #fafafa;
+          font-family: 'Roboto Mono', monospace;
+          font-size: 22px;
+          user-select: none;
+        }
+      }
+      
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .about-us {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1860px) {
+  .about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &-counter {
+      margin-top: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      &-first {
+        border-right: 2px solid #28282a;
+        border-bottom: 2px solid #28282a;
+        width: 350px;
+        padding: 20px;
+      }
+      &-second{
+        border-bottom: 2px solid #28282a;
+        border-left: none;
+        width: 350px;
+        padding: 20px;
+      }
+      &-third {
+        border-right: 2px solid #28282a;
+        border-bottom: none;
+        width: 350px;
+        padding: 20px;
+      }
+      &-fourth {
+        width: 350px;
+        padding: 20px;
+        border-left: none;
+        
+      }
+      h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 130px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      P {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        text-align: center;
+        font-size: 28px;
+        user-select: none;
+        
+      }
+    }
+    &-us {
+      padding: 15px;
+      margin-top: 0;
+      h5 {
+        margin-top: 100px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-family: 'Ubuntu', monospace;
+        color: #818181;
+        font-size: 22px;
+        user-select: none;
+        span {
+          margin-top: 15px;
+          display: block;
+        }
+        
+      }
+      ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        user-select: none;
+        li {
+          padding-left: 15px;
+          list-style: disc;
+          margin: 15px;
+          margin-left: 50px;
+          color: #fafafa;
+          font-family: 'Roboto Mono', monospace;
+          font-size: 22px;
+          user-select: none;
+        }
+      }
+      
+    }
   }
 }
