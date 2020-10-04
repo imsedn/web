@@ -35,6 +35,7 @@ body {
   box-sizing: border-box;
   background-image: none;
   background-color: #0c0c0c;
+  margin-bottom: 0;
 }
 
 input[type=number] {
@@ -455,24 +456,10 @@ a:hover {
   text-shadow: -1px -1px 2px #463f3f;
   transition: all 0.3s ease;
 }
-.work-content-btn button:before {
-  content: "";
-  position: absolute;
-  top: 150px;
-  left: 10px;
-  width: 0;
-  height: 1px;
-  background: #d64444;
-  border-radius: 5px;
-  transition: all 2s ease-in-out;
-}
 .work-content-btn button:hover {
   color: #e04b4b;
   transition: all 0.3s ease;
   text-shadow: -2px -2px 2px #463f3f;
-}
-.work-content-btn button:hover:before {
-  width: 80%;
 }
 .work-content-btn button i {
   color: #e03737;
@@ -1146,6 +1133,7 @@ a:hover {
   }
 }
 .contactus {
+  position: relative;
   height: 100vh;
   margin-top: 100px;
 }
@@ -1156,6 +1144,7 @@ a:hover {
   letter-spacing: 2px;
   color: #fafafa;
   font-weight: bold;
+  user-select: none;
 }
 .contactus p {
   font-family: "Open Sans", sans-serif;
@@ -1164,6 +1153,7 @@ a:hover {
   margin-bottom: 50px;
   font-size: 18px;
   color: #fafafa;
+  user-select: none;
 }
 .contactus a {
   color: #fafafa;
@@ -1174,9 +1164,10 @@ a:hover {
   font-weight: bold;
   margin-top: 10px;
   transition: all 0.3s ease;
+  user-select: none;
 }
 .contactus a:hover {
-  color: #fafafa;
+  color: #e04b4b;
   transition: all 0.3s ease;
 }
 .contactus a i {
@@ -1193,6 +1184,7 @@ a:hover {
   border: none;
   border-bottom: 1px solid #ffffff;
   transition: all 0.3s ease;
+  border-radius: none;
 }
 .contactus form input:focus {
   border-bottom: 1px solid #e04b4b;
@@ -1260,8 +1252,10 @@ a:hover {
 }
 .contactus-map {
   display: block;
-  position: relative;
-  height: 280px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  height: 380px;
   width: 100vw;
   background-image: url(../img/map.JPG);
   -webkit-box-shadow: 10px 10px 400px 20px #000000 inset;
@@ -1277,6 +1271,131 @@ a:hover {
   font-size: 14px;
   left: 50%;
   transform: translate(-50%, 0);
+  user-select: none;
+}
+
+@media (min-width: 576px) {
+  .contactus-form h5 {
+    font-size: 32px;
+  }
+  .contactus-form p {
+    font-size: 20px;
+    margin-bottom: 75px;
+  }
+  .contactus-form a {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .contactus-form form input {
+    font-size: 25px;
+    width: 40vw;
+    margin: 70px 25px 50px;
+  }
+  .contactus-form button {
+    margin-bottom: 50px;
+  }
+  .contactus-map {
+    height: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .contactus-form h5 {
+    font-size: 36px;
+    letter-spacing: 5px;
+  }
+  .contactus-form p {
+    font-size: 22px;
+    margin-bottom: 75px;
+    letter-spacing: 2px;
+  }
+  .contactus-form a {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .contactus-form form input {
+    font-size: 25px;
+    width: 40vw;
+    margin: 70px 25px 50px;
+  }
+  .contactus-form button {
+    margin-bottom: 50px;
+  }
+  .contactus-map {
+    height: 230px;
+  }
+}
+@media (min-width: 1400px) {
+  .contactus {
+    position: relative;
+    margin-top: 150px;
+  }
+  .contactus-form h5 {
+    font-size: 48px;
+    letter-spacing: 7px;
+  }
+  .contactus-form p {
+    font-size: 32px;
+  }
+  .contactus-form form input {
+    position: relative;
+    left: 50%;
+    transform: translate(-33vw, 0);
+    user-select: none;
+    color: #fafafa;
+    font-size: 20px;
+    background: transparent;
+    font-family: "Roboto Mono", monospace;
+    width: 20vw;
+    margin: 90px 10px 50px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    transition: all 0.3s ease;
+    border-radius: none;
+  }
+  .contactus-form form input:focus {
+    border-bottom: 1px solid #e04b4b;
+    transition: all 0.3s ease;
+  }
+  .contactus-form form input::placeholder {
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .contactus-form form #massage {
+    display: inline;
+    width: 20vw;
+    margin-left: 10px;
+  }
+  .contactus-form form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contactus-map {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 350px;
+    width: 100vw;
+    background-image: url(../img/map.JPG);
+    -webkit-box-shadow: 10px 10px 400px 20px #000000 inset;
+    box-shadow: 10px 10px 400px 20px #000000 inset;
+    -webkit-box-shadow: 10px 10px 400px 20px #000000 outset;
+    box-shadow: 10px 10px 400px 20px #000000 outset;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    background-size: 100%;
+  }
+  .contactus-map p {
+    font-family: "Roboto Mono", monospace;
+    color: #d1bcbc;
+    position: absolute;
+    bottom: -30px;
+    font-size: 14px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    user-select: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
