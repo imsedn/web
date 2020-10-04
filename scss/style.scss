@@ -1352,7 +1352,7 @@
     color: #fafafa;
   }
   a {
-    color: #e04b4b;
+    color: #fafafa;
     font-family: 'Roboto Mono', monospace;
     display: block;
     font-size: 20px;
@@ -1403,7 +1403,7 @@
       color: #fafafa;
       font-size: 28px;
       margin-top: 50px;
-      background-color: #d62e2e;
+      background-color: #a83636;
       border: none;
       letter-spacing: 3px;
       font-weight: bold;
@@ -1412,6 +1412,7 @@
       left: 50%;
       transform: translate(-50%, 0);
       transition: all 0.3s ease;
+      user-select: none;
       &:hover {
         // background-color: #e02323;
         transition: all 0.3s ease;
