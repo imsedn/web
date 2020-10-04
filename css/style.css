@@ -37,6 +37,10 @@ body {
   background-color: #0c0c0c;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 button {
   outline: none !important;
 }
@@ -1140,6 +1144,138 @@ a:hover {
     font-size: 22px;
     user-select: none;
   }
+}
+.contactus {
+  height: 100vh;
+  margin-top: 100px;
+}
+.contactus h5 {
+  font-family: "Ubuntu", monospace;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #fafafa;
+  font-weight: bold;
+}
+.contactus p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #fafafa;
+}
+.contactus a {
+  color: #e04b4b;
+  font-family: "Roboto Mono", monospace;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+.contactus a:hover {
+  color: #fafafa;
+  transition: all 0.3s ease;
+}
+.contactus a i {
+  margin-right: 10px;
+  color: #fafafa;
+}
+.contactus form input {
+  color: #fafafa;
+  font-size: 20px;
+  background: transparent;
+  font-family: "Roboto Mono", monospace;
+  width: 40vw;
+  margin: 70px 10px 50px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+.contactus form input:focus {
+  border-bottom: 1px solid #e04b4b;
+  transition: all 0.3s ease;
+}
+.contactus form input::placeholder {
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 20px;
+}
+.contactus form #massage {
+  display: block;
+  margin: 0 auto;
+  width: 90vw;
+}
+.contactus form button {
+  font-family: "Open Sans", sans-serif;
+  width: 300px;
+  height: 50px;
+  color: #fafafa;
+  font-size: 28px;
+  margin-top: 50px;
+  background-color: #d62e2e;
+  border: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.3s ease;
+}
+.contactus form button:hover {
+  transition: all 0.3s ease;
+  color: #fafafa;
+}
+.contactus form button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 50px;
+  background: rgba(243, 240, 239, 0.902);
+  border-radius: 1px;
+  transition: all 1s ease;
+}
+.contactus form button:hover:before {
+  width: 3%;
+}
+.contactus form button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 50px;
+  background: rgba(243, 240, 239, 0.902);
+  border-radius: 1px;
+  transition: all 1s ease;
+}
+.contactus form button:hover:after {
+  width: 3%;
+}
+.contactus-map {
+  display: block;
+  position: relative;
+  height: 280px;
+  width: 100vw;
+  background-image: url(../img/map.JPG);
+  -webkit-box-shadow: 10px 10px 400px 20px #000000 inset;
+  box-shadow: 10px 10px 400px 20px #000000 inset;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contactus-map p {
+  font-family: "Roboto Mono", monospace;
+  color: #d1bcbc;
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
